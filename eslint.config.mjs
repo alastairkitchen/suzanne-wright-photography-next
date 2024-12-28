@@ -9,17 +9,29 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-const eslintConfig = [
+const config = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
-];
 
-const config = {
-  eslintConfig,
-  experimental: {
-    optimizePackageImports: ["@chakra-ui/react"],
+  // Custom rules and settings
+  {
+    files: ["**/*.{ts,tsx}"],
+    languageOptions: {
+      parserOptions: {
+        ecmaVersion: "latest",
+        sourceType: "module",
+        project: "./tsconfig.json",
+      },
+    },
   },
-};
 
-// export default eslintConfig;
+  // Example: Customize Chakra UI imports optimization (this part is unrelated to ESLint itself)
+  {
+    settings: {
+      chakra: {
+        optimizePackageImports: ["@chakra-ui/react"],
+      },
+    },
+  },
+];
 
 export default config;
