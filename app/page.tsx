@@ -10,6 +10,7 @@ type Cat = {
 export default async function Home() {
   const { data } = getContent("home");
 
+  console.dir("DATA");
   console.dir(data);
 
   return (
