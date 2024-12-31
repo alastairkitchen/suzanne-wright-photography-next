@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: alastairkitchen/suzanne-wright-photography-next
+  repo: https://github.com/alastairkitchen/suzanne-wright-photography-next.git
   branch: main
   commit_messages:
     create: Create {{collection}} “{{slug}}”
