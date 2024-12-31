@@ -1,8 +1,10 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
-export async function GET(request: { url: string | URL }) {
-  const { searchParams } = new URL(request.url);
+export async function GET(req: NextRequest) {
+  // Parse the URL from the request
+  const { searchParams } = new URL(req.url);
   const code = searchParams.get("code");
+
   const client_id = process.env.CLIENT_ID || "";
   const client_secret = process.env.CLIENT_SECRET || "";
 
