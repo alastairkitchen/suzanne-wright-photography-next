@@ -2,7 +2,7 @@ backend:
   name: github
   repo: alastairkitchen/suzanne-wright-photography-next.git
   branch: main
-  base_url: todo
+  base_url: https://gourami-provider-oauth.co.uk
   commit_messages:
     create: Create {{collection}} “{{slug}}”
     update: Update {{collection}} “{{slug}}”
