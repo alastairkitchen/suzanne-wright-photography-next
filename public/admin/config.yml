@@ -2,7 +2,7 @@ backend:
   name: github
   repo: alastairkitchen/suzanne-wright-photography-next.git
   branch: main
-  auth_endpoint: lib/auth
+  base_url: todo
   commit_messages:
     create: Create {{collection}} “{{slug}}”
     update: Update {{collection}} “{{slug}}”
