@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: https://github.com/alastairkitchen/suzanne-wright-photography-next
+  repo: alastairkitchen/suzanne-wright-photography-next
   branch: main
   base_url: https://gourami-provider-oauth.co.uk
   commit_messages:
